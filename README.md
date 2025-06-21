@@ -1,59 +1,52 @@
-# TodoList
+# Todo List – Apprentissage Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.3.
+Une application simple de gestion de tâches (Todo List) développée avec Angular.
+Ce projet a pour but de découvrir les bases du framework Angular à travers une mise en pratique concrète et progressive.
 
-## Development server
+## Fonctionnalités
 
-To start a local development server, run:
+- Ajouter une nouvelle tâche
+- Marquer une tâche comme terminée
+- Supprimer une tâche
+- Afficher les tâches actives et terminées
+- Données stockées en mémoire (sans backend)
 
-```bash
-ng serve
-```
+## Concepts Angular abordés
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+- Création de composants avec `@Component`
+- Liaison de données (Data binding)
+- Gestion d’événements (`(click)`, `(submit)`, etc.)
+- Directives structurelles (`*ngIf`, `*ngFor`)
+- Utilisation d’un service avec `@Injectable`
+- Passage de données entre composant et template
+- Introduction à l’architecture modulaire Angular
 
-## Code scaffolding
+## Lancer le projet
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+1. **Cloner le dépôt :**
 
 ```bash
-ng build
+  git clone https://github.com/ton-utilisateur/todo-list-angular.git
+  cd todo-list-angular
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+2. ***Installer les dépendances :***
 ```bash
-ng test
+  npm install
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
+3. **Démarrer le serveur de développement :**
 ```bash
-ng e2e
+  ng serve
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+Accéder à l’application sur : http://localhost:4200
 
-## Additional Resources
+## Prérequis
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Node.js v16+ recommandé
+
+Angular CLI installé globalement :
+```bash
+  npm install -g @angular/cli
+```
